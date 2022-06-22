@@ -2,9 +2,10 @@
 
 ## Required Software
 
-1. [Immunity Debugger](https://www.immunityinc.com/products/debugger/) - for debugging the target application
-2. [Python 2.7 (x86)](https://www.python.org/downloads/release/python-2718/) - required by Immunity and mona.py
-3. [mona.py](https://github.com/corelan/mona) - useful to find gadgets (like JMP ESP)
+1. A 32-bit Windows OS (Windows 7 or 10 preferred). 64-bit Windows or Wine *might* work for some challenges.
+2. [Immunity Debugger](https://www.immunityinc.com/products/debugger/) - for debugging the target application
+3. [Python 2.7 (x86)](https://www.python.org/downloads/release/python-2718/) - required by Immunity and mona.py
+4. [mona.py](https://github.com/corelan/mona) - useful to find gadgets (like JMP ESP)
 
 ## Vulnerable Applications
 
@@ -14,7 +15,7 @@
 2. Install it on a 32-bit host.
 3. Run the client, click on `Options` > `Server` > `Enable Web Server on Port: 80`
 4. Make sure you can browse to http://target/ and see the web interface. Disable firewall on target if needed.
-5. Start Immunity Debugger **as administrator** and attach to the running `syncbrs.exe` process.
+5. Start Immunity Debugger *as administrator* and attach to the running `syncbrs.exe` process.
 6. Use the POC script from Kali to see the initial buffer overflow. Build a working `windows/shell_reverse_tcp` exploit.
 
 ### Freefloat FTP Server 1.0
