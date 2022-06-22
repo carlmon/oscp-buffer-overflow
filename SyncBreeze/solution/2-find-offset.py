@@ -7,7 +7,7 @@ buf = b"Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab4Ab5Ab6Ab7Ab8Ab9Ac0Ac1Ac2Ac3
 
 # See crash in Immunity Debugger with the following interesting values in regesters:
 # EIP = 42306142
-# ESP points to string starting with "2Ba3"
+# ESP points to string starting with "2Ba3" (first 4 characters)
 
 # EIP offset is 780
 # /usr/bin/msf-pattern_offset -q 42306142
